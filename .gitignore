@@ -1,0 +1,11 @@
+venv/
+.idea/
+*.whl
+build/
+dist/
+.cache/
+JiraService.egg-info
+.coverage
+config_prod
+nosetests.xml
+*.pyc

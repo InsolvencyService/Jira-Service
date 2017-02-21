@@ -1,0 +1,257 @@
+{
+  "timestamp": 1487073070768,
+  "webhookEvent": "jira:issue_updated",
+  "issue_event_type_name": "issue_generic",
+  "user": {
+    "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=andy",
+    "name": "andy",
+    "key": "andy",
+    "emailAddress": "sixdaysandy@gmail.com",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=48",
+      "24x24": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=24",
+      "16x16": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=16",
+      "32x32": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=32"
+    },
+    "displayName": "Andy Price",
+    "active": true,
+    "timeZone": "Europe/London"
+  },
+  "issue": {
+    "id": "26400",
+    "self": "https://inssdigital.atlassian.net/rest/api/2/issue/26400",
+    "key": "ADS-166",
+    "fields": {
+      "issuetype": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/issuetype/10001",
+        "id": "10001",
+        "description": "A user story. Created by JIRA Software - do not edit or delete.",
+        "iconUrl": "https://inssdigital.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+        "name": "Story",
+        "subtask": false,
+        "avatarId": 10315
+      },
+      "timespent": null,
+      "project": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/project/10800",
+        "id": "10800",
+        "key": "ADS",
+        "name": "Application Development and Support",
+        "avatarUrls": {
+          "48x48": "https://inssdigital.atlassian.net/secure/projectavatar?pid=10800&avatarId=12200",
+          "24x24": "https://inssdigital.atlassian.net/secure/projectavatar?size=small&pid=10800&avatarId=12200",
+          "16x16": "https://inssdigital.atlassian.net/secure/projectavatar?size=xsmall&pid=10800&avatarId=12200",
+          "32x32": "https://inssdigital.atlassian.net/secure/projectavatar?size=medium&pid=10800&avatarId=12200"
+        }
+      },
+      "customfield_11000": null,
+      "fixVersions": [],
+      "customfield_11200": null,
+      "aggregatetimespent": null,
+      "resolution": null,
+      "customfield_11201": null,
+      "customfield_10500": null,
+      "customfield_10104": "As a member of the Service Management Team\r\nWhen a story is moved to the done column\r\nThen I will receive an email containing Story Number, User making the transition, Time of Transition\r\n\r\nAs a member of the Service Management Team \r\nWhen a spike or none releasable task is moved to the done column\r\nThen I will not receive an email\r\n",
+      "customfield_10105": null,
+      "customfield_10700": null,
+      "customfield_10106": null,
+      "customfield_10900": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "lastViewed": "2017-02-14T11:51:10.756+0000",
+      "watches": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/issue/ADS-166/watchers",
+        "watchCount": 0,
+        "isWatching": false
+      },
+      "created": "2017-01-25T10:53:28.415+0000",
+      "customfield_10020": null,
+      "customfield_10021": "Not started",
+      "priority": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/priority/4",
+        "iconUrl": "https://inssdigital.atlassian.net/images/icons/priorities/minor.svg",
+        "name": "Minor",
+        "id": "4"
+      },
+      "customfield_10101": null,
+      "customfield_10102": null,
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10017": null,
+      "customfield_10018": null,
+      "customfield_10019": null,
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=andy",
+        "name": "andy",
+        "key": "andy",
+        "emailAddress": "sixdaysandy@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=48",
+          "24x24": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=24",
+          "16x16": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=16",
+          "32x32": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=32"
+        },
+        "displayName": "Andy Price",
+        "active": true,
+        "timeZone": "Europe/London"
+      },
+      "updated": "2017-02-14T11:51:10.766+0000",
+      "status": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/status/10703",
+        "description": "",
+        "iconUrl": "https://inssdigital.atlassian.net/images/icons/statuses/generic.png",
+        "name": "In Development",
+        "id": "10703",
+        "statusCategory": {
+          "self": "https://inssdigital.atlassian.net/rest/api/2/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "components": [],
+      "timeoriginalestimate": null,
+      "description": "Service Management need to be notified when we release stories into production.  \r\nPreviously proposed Jenkins Email solution is very limited and fragile, so redesigned the solution using Jenkins Webhooks calling out to a API that we'll host ourselves that sends an email to the recipient group with the required information pulled from Jira.\r\n\r\n\r\n+Assumptions+\r\n(i) Service will be hosted on UKCloud Docker Infrastructure\r\n(i) Emails will be sent via the Amazon SES Service\r\n(i) Service Management email address is ITChange.Control@insolvency.gsi.gov.uk\r\n(i) This is a fully TDD Project",
+      "customfield_10011": "1|hzznb4:g",
+      "customfield_11100": null,
+      "customfield_10012": null,
+      "customfield_10013": null,
+      "customfield_10014": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "customfield_10005": null,
+      "customfield_10600": null,
+      "customfield_10006": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@10c7fe4[id=96,rapidViewId=21,state=CLOSED,name=ADS Sprint 4,goal=,startDate=2017-01-25T21:00:16.818Z,endDate=2017-02-08T06:00:00.000Z,completeDate=2017-02-09T12:06:45.165Z,sequence=96]",
+        "com.atlassian.greenhopper.service.sprint.Sprint@e62f86[id=97,rapidViewId=21,state=ACTIVE,name=ADS Sprint 5,goal=,startDate=2017-02-09T09:00:45.189Z,endDate=2017-02-22T23:00:00.000Z,completeDate=<null>,sequence=97]"
+      ],
+      "customfield_10007": null,
+      "customfield_10800": "{}",
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "summary": "Notify Service Management of Release",
+      "creator": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=andy",
+        "name": "andy",
+        "key": "andy",
+        "emailAddress": "sixdaysandy@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=48",
+          "24x24": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=24",
+          "16x16": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=16",
+          "32x32": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=32"
+        },
+        "displayName": "Andy Price",
+        "active": true,
+        "timeZone": "Europe/London"
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=andy",
+        "name": "andy",
+        "key": "andy",
+        "emailAddress": "sixdaysandy@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=48",
+          "24x24": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=24",
+          "16x16": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=16",
+          "32x32": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=32"
+        },
+        "displayName": "Andy Price",
+        "active": true,
+        "timeZone": "Europe/London"
+      },
+      "customfield_10000": null,
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10001": "2017-02-13T12:18:21.948+0000",
+      "customfield_10002": null,
+      "customfield_10200": null,
+      "customfield_10003": null,
+      "customfield_10201": null,
+      "customfield_10004": 2.0,
+      "customfield_10202": null,
+      "environment": null,
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "comment": {
+        "comments": [
+          {
+            "self": "https://inssdigital.atlassian.net/rest/api/2/issue/26400/comment/25105",
+            "id": "25105",
+            "author": {
+              "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=James.Warren",
+              "name": "James.Warren",
+              "key": "james.warren",
+              "emailAddress": "James.Warren@insolvency.gsi.gov.uk",
+              "avatarUrls": {
+                "48x48": "https://inssdigital.atlassian.net/secure/useravatar?ownerId=james.warren&avatarId=12400",
+                "24x24": "https://inssdigital.atlassian.net/secure/useravatar?size=small&ownerId=james.warren&avatarId=12400",
+                "16x16": "https://inssdigital.atlassian.net/secure/useravatar?size=xsmall&ownerId=james.warren&avatarId=12400",
+                "32x32": "https://inssdigital.atlassian.net/secure/useravatar?size=medium&ownerId=james.warren&avatarId=12400"
+              },
+              "displayName": "James Warren",
+              "active": true,
+              "timeZone": "Europe/London"
+            },
+            "body": "After discussions with Andy Price, we believe a far better solution would be to use Jira to notify service management of when a change has been moved in to awaiting deployment or done.\r\n\r\nWe may want to think about creating a tag for code that actually gets released as opposed to spikes or non releaseable content (documentation etc)",
+            "updateAuthor": {
+              "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=James.Warren",
+              "name": "James.Warren",
+              "key": "james.warren",
+              "emailAddress": "James.Warren@insolvency.gsi.gov.uk",
+              "avatarUrls": {
+                "48x48": "https://inssdigital.atlassian.net/secure/useravatar?ownerId=james.warren&avatarId=12400",
+                "24x24": "https://inssdigital.atlassian.net/secure/useravatar?size=small&ownerId=james.warren&avatarId=12400",
+                "16x16": "https://inssdigital.atlassian.net/secure/useravatar?size=xsmall&ownerId=james.warren&avatarId=12400",
+                "32x32": "https://inssdigital.atlassian.net/secure/useravatar?size=medium&ownerId=james.warren&avatarId=12400"
+              },
+              "displayName": "James Warren",
+              "active": true,
+              "timeZone": "Europe/London"
+            },
+            "created": "2017-02-13T12:18:21.948+0000",
+            "updated": "2017-02-13T12:18:21.948+0000"
+          }
+        ],
+        "maxResults": 1,
+        "total": 1,
+        "startAt": 0
+      },
+      "votes": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/issue/ADS-166/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      }
+    }
+  },
+  "changelog": {
+    "id": "71323",
+    "items": [
+      {
+        "field": "status",
+        "fieldtype": "jira",
+        "from": "1",
+        "fromString": "Awaiting A & D",
+        "to": "10703",
+        "toString": "In Development"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+export APP_DEBUG=true
+export APP_TESTING=true
+export APP_MAIL_SENDER_ADDRESS=test_email@test.com
+export APP_RECIPIENTS=[\"test_email@test.com\"]

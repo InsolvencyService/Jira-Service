@@ -1,0 +1,11 @@
+# Include Production running requirements
+-r requirements.production.txt
+# Test and Dev Requirements
+pytest
+pyhamcrest
+flake8
+wheel
+mock
+nose
+coverage
+flask-testing
