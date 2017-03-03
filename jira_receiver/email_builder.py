@@ -11,9 +11,9 @@ def _render_template(model, template):
     return html_template.render(model)
 
 
-def build_email(model, template, recipients):
+def build_email(model, template, recipients, subject):
     email = Message(
-        "Production Release",
+        subject,
 
     )
     email.html = _render_template(model, template)

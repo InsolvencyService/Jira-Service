@@ -1,0 +1,269 @@
+{
+  "transition": {
+    "workflowId": 29703,
+    "workflowName": "ADS Workflow v 1.1",
+    "transitionId": 81,
+    "transitionName": "PO/Business Sign Off",
+    "from_status": "User Acceptance/Sign Off",
+    "to_status": "Signed Off Awaiting Deployment"
+  },
+  "comment": "",
+  "user": {
+    "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=James.Warren",
+    "name": "James.Warren",
+    "key": "james.warren",
+    "emailAddress": "James.Warren@insolvency.gsi.gov.uk",
+    "avatarUrls": {
+      "48x48": "https://inssdigital.atlassian.net/secure/useravatar?ownerId=james.warren&avatarId=12400",
+      "24x24": "https://inssdigital.atlassian.net/secure/useravatar?size=small&ownerId=james.warren&avatarId=12400",
+      "16x16": "https://inssdigital.atlassian.net/secure/useravatar?size=xsmall&ownerId=james.warren&avatarId=12400",
+      "32x32": "https://inssdigital.atlassian.net/secure/useravatar?size=medium&ownerId=james.warren&avatarId=12400"
+    },
+    "displayName": "James Warren",
+    "active": true,
+    "timeZone": "Europe/London"
+  },
+  "issue": {
+    "id": "27903",
+    "self": "https://inssdigital.atlassian.net/rest/api/2/issue/27903",
+    "key": "ADS-263",
+    "fields": {
+      "issuetype": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/issuetype/10001",
+        "id": "10001",
+        "description": "Created by JIRA Agile - do not edit or delete. Issue type for a user story.",
+        "iconUrl": "https://inssdigital.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+        "name": "Story",
+        "subtask": false,
+        "avatarId": 10315
+      },
+      "timespent": null,
+      "project": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/project/10800",
+        "id": "10800",
+        "key": "ADS",
+        "name": "Application Development and Support",
+        "avatarUrls": {
+          "48x48": "https://inssdigital.atlassian.net/secure/projectavatar?pid=10800&avatarId=12200",
+          "24x24": "https://inssdigital.atlassian.net/secure/projectavatar?size=small&pid=10800&avatarId=12200",
+          "16x16": "https://inssdigital.atlassian.net/secure/projectavatar?size=xsmall&pid=10800&avatarId=12200",
+          "32x32": "https://inssdigital.atlassian.net/secure/projectavatar?size=medium&pid=10800&avatarId=12200"
+        }
+      },
+      "customfield_11000": null,
+      "fixVersions": [],
+      "customfield_11200": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/customFieldOption/10201",
+        "value": "Minor",
+        "id": "10201"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "customfield_11201": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/customFieldOption/10204",
+        "value": "Standard",
+        "id": "10204"
+      },
+      "customfield_10500": null,
+      "customfield_10104": "Given that a Jira Story has been signed off and is fit for Release\r\nAnd that the estimated release date has been entered\r\nWhen a story is transitioned from \"UAT/Showcase\" to \"Signed off/Awaiting Deployment\"\r\nThen an email will be sent to the Service Management Inbox with proposed release details.",
+      "customfield_10105": null,
+      "customfield_10700": null,
+      "customfield_10106": null,
+      "customfield_10900": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "lastViewed": "2017-02-27T12:44:53.039+0000",
+      "watches": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/issue/ADS-263/watchers",
+        "watchCount": 0,
+        "isWatching": false
+      },
+      "created": "2017-02-22T13:27:04.121+0000",
+      "customfield_10020": null,
+      "customfield_10021": "Not started",
+      "priority": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/priority/4",
+        "iconUrl": "https://inssdigital.atlassian.net/images/icons/priorities/minor.svg",
+        "name": "Minor",
+        "id": "4"
+      },
+      "customfield_10101": "(i) Only Story cards and bugs will trigger the email (tasks have a different workflow)\r\n(i) IT Business Process will change to include the card being updated with proposed release date.\r\n(i) Existing Jira Service will be expanded\r\n(i) Service will still be hosted on \"proving\" infrastructure until production is built\r\n(i) Jira Workflow will be updated to include transition webhook call",
+      "customfield_10102": null,
+      "labels": [
+        "UKCloud"
+      ],
+      "customfield_10016": null,
+      "customfield_10017": null,
+      "customfield_10018": null,
+      "customfield_10019": null,
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=James.Warren",
+        "name": "James.Warren",
+        "key": "james.warren",
+        "emailAddress": "James.Warren@insolvency.gsi.gov.uk",
+        "avatarUrls": {
+          "48x48": "https://inssdigital.atlassian.net/secure/useravatar?ownerId=james.warren&avatarId=12400",
+          "24x24": "https://inssdigital.atlassian.net/secure/useravatar?size=small&ownerId=james.warren&avatarId=12400",
+          "16x16": "https://inssdigital.atlassian.net/secure/useravatar?size=xsmall&ownerId=james.warren&avatarId=12400",
+          "32x32": "https://inssdigital.atlassian.net/secure/useravatar?size=medium&ownerId=james.warren&avatarId=12400"
+        },
+        "displayName": "James Warren",
+        "active": true,
+        "timeZone": "Europe/London"
+      },
+      "updated": "2017-02-27T12:44:46.477+0000",
+      "status": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/status/10706",
+        "description": "",
+        "iconUrl": "https://inssdigital.atlassian.net/images/icons/statuses/generic.png",
+        "name": "User Acceptance/Sign Off",
+        "id": "10706",
+        "statusCategory": {
+          "self": "https://inssdigital.atlassian.net/rest/api/2/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "components": [
+        {
+          "self": "https://inssdigital.atlassian.net/rest/api/2/component/12100",
+          "id": "12100",
+          "name": "Jira Service"
+        }
+      ],
+      "timeoriginalestimate": null,
+      "description": "To replace the Production RFC for authorised work coming through the sprint, when a story has been signed off by the business a conversation will be held and the estimated release date will be recorded in Jira before the card is moved to \"Signed Off, Awaiting Deployment\".\r\n\r\nWhen the card is moved an email will be sent to the Change Control Inbox(ITChange.Control@insolvency.gsi.gov.uk) advising them of:\r\n- Story Number\r\n- Story Summary\r\n- Assignee/Developer\r\n- Who Signed it Off\r\n- The Estimated date for Release\r\n\r\nAdd a \"Signed off By\" field and make mandatory for moving stories to awaiting deployment if Jira allows ",
+      "customfield_10011": "1|i0015f:",
+      "customfield_11100": null,
+      "customfield_10012": null,
+      "customfield_10013": null,
+      "customfield_11300": "Andy Price",
+      "customfield_10014": null,
+      "customfield_11301": "2017-02-28",
+      "timetracking": {},
+      "customfield_10015": null,
+      "customfield_10005": null,
+      "customfield_10600": null,
+      "customfield_10006": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@1dbd36f[id=98,rapidViewId=21,state=ACTIVE,name=ADS Sprint 6,goal=,startDate=2017-02-23T07:00:28.673Z,endDate=2017-03-09T03:39:00.000Z,completeDate=<null>,sequence=98]"
+      ],
+      "customfield_10007": null,
+      "customfield_10800": "{}",
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "summary": "Replace Production RFC Process",
+      "creator": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=andy",
+        "name": "andy",
+        "key": "andy",
+        "emailAddress": "sixdaysandy@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=48",
+          "24x24": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=24",
+          "16x16": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=16",
+          "32x32": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=32"
+        },
+        "displayName": "Andy Price",
+        "active": true,
+        "timeZone": "Europe/London"
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=andy",
+        "name": "andy",
+        "key": "andy",
+        "emailAddress": "sixdaysandy@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=48",
+          "24x24": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=24",
+          "16x16": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=16",
+          "32x32": "https://secure.gravatar.com/avatar/61004aeecfa14d00a6cf0b19b6b25ad9?d=mm&s=32"
+        },
+        "displayName": "Andy Price",
+        "active": true,
+        "timeZone": "Europe/London"
+      },
+      "customfield_10000": null,
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10001": "2017-02-27T12:34:01.374+0000",
+      "customfield_10002": null,
+      "customfield_10200": null,
+      "customfield_10003": null,
+      "customfield_10201": null,
+      "customfield_10004": 2.0,
+      "customfield_10202": null,
+      "environment": null,
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "comment": {
+        "comments": [
+          {
+            "self": "https://inssdigital.atlassian.net/rest/api/2/issue/27903/comment/26000",
+            "id": "26000",
+            "author": {
+              "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=James.Warren",
+              "name": "James.Warren",
+              "key": "james.warren",
+              "emailAddress": "James.Warren@insolvency.gsi.gov.uk",
+              "avatarUrls": {
+                "48x48": "https://inssdigital.atlassian.net/secure/useravatar?ownerId=james.warren&avatarId=12400",
+                "24x24": "https://inssdigital.atlassian.net/secure/useravatar?size=small&ownerId=james.warren&avatarId=12400",
+                "16x16": "https://inssdigital.atlassian.net/secure/useravatar?size=xsmall&ownerId=james.warren&avatarId=12400",
+                "32x32": "https://inssdigital.atlassian.net/secure/useravatar?size=medium&ownerId=james.warren&avatarId=12400"
+              },
+              "displayName": "James Warren",
+              "active": true,
+              "timeZone": "Europe/London"
+            },
+            "body": "Added webhook for awaiting-release and added trigger to the workflow for it.\r\n\r\nAdded \"Signed Off By\" and \"Estimated Release Date\" to Jira Config for Tasks and Bugs.\r\n\r\nOnce this is implemented we will need to make these mandatory to move issue to awaiting release.",
+            "updateAuthor": {
+              "self": "https://inssdigital.atlassian.net/rest/api/2/user?username=James.Warren",
+              "name": "James.Warren",
+              "key": "james.warren",
+              "emailAddress": "James.Warren@insolvency.gsi.gov.uk",
+              "avatarUrls": {
+                "48x48": "https://inssdigital.atlassian.net/secure/useravatar?ownerId=james.warren&avatarId=12400",
+                "24x24": "https://inssdigital.atlassian.net/secure/useravatar?size=small&ownerId=james.warren&avatarId=12400",
+                "16x16": "https://inssdigital.atlassian.net/secure/useravatar?size=xsmall&ownerId=james.warren&avatarId=12400",
+                "32x32": "https://inssdigital.atlassian.net/secure/useravatar?size=medium&ownerId=james.warren&avatarId=12400"
+              },
+              "displayName": "James Warren",
+              "active": true,
+              "timeZone": "Europe/London"
+            },
+            "created": "2017-02-27T12:34:01.374+0000",
+            "updated": "2017-02-27T12:34:01.374+0000"
+          }
+        ],
+        "maxResults": 1,
+        "total": 1,
+        "startAt": 0
+      },
+      "votes": {
+        "self": "https://inssdigital.atlassian.net/rest/api/2/issue/ADS-263/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      }
+    }
+  },
+  "timestamp": 1488199493046
+}
+

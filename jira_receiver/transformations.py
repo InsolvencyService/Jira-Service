@@ -8,6 +8,8 @@ def transform_issue_updated_data(request_data):
         "title": ("issue", "fields", "summary"),
         "released_by": ("user", "displayName"),
         "assignee": ("issue", "fields", "assignee", "displayName"),
+        "sign_off_by": ("issue", "fields", "customfield_11300"),
+        "estimated_release_date": ("issue", "fields", "customfield_11301")
     }
     return _map_values(input_dict, mapping_dict)
 
