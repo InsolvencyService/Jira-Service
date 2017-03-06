@@ -12,13 +12,12 @@ def health_check():
     return "Service Running", 200
 
 
-@jira_receiver.route('/story-complete', methods=["POST"])
-def accept_post():
+def accept_post(tmplate, sbject):
     logger.info("Request Received")
     if request.data:
         model = transform_issue_updated_data(request.data)
         logger.info("Calling Mail Builder")
-        email = build_email(model, "released_to_production", current_app.config["RECIPIENTS"])
+        email = build_email(model, tmplate, current_app.config["RECIPIENTS"], sbject)
         logger.info("Mail Built - Sending")
         mail.send(email)
         logger.info("Mail Sent")
@@ -26,3 +25,13 @@ def accept_post():
     else:
         logger.error("No Request Data")
         return "Bad Request", 400
+
+
+@jira_receiver.route('/story-complete', methods=["POST"])
+def accept_post_sc():
+    return accept_post("released_to_production", "Production Release")
+
+
+@jira_receiver.route('/awaiting-release', methods=["POST"])
+def accept_post_ar():
+    return accept_post("awaiting_release", "Awaiting Release")

@@ -13,7 +13,7 @@ default: clean venv clean_pyc flake8 tests wheel
 
 venv: venv/bin/activate
 venv/bin/activate: requirements.dev.txt
-	test -d venv || virtualenv venv --python=/usr/local/lib/python2.7.11/bin/python
+	test -d venv || virtualenv venv
 	. venv/bin/activate; pip install -r requirements.dev.txt
 	$(call green,"[Making venv successful]")
 

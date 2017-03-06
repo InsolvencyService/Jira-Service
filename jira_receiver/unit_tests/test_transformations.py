@@ -55,6 +55,30 @@ class TestTransformations(unittest.TestCase):
         assert_that("assignee" in output)
         assert_that(output.get("assignee"), equal_to(""))
 
+    def test_transform_returns_sign_off_by(self):
+        output = transform_issue_updated_data(json.dumps(issue_updated_json))
+
+        assert_that("sign_off_by" in output)
+        assert_that(output.get("sign_off_by"), equal_to("James Warren"))
+
+    def test_transform_returns_no_sign_off_by(self):
+        output = transform_issue_updated_data(json.dumps({}))
+
+        assert_that("sign_off_by" in output)
+        assert_that(output.get("sign_off_by"), equal_to(""))
+
+    def test_transform_returns_estimated_release_date(self):
+        output = transform_issue_updated_data(json.dumps(issue_updated_json))
+
+        assert_that("estimated_release_date" in output)
+        assert_that(output.get("estimated_release_date"), equal_to("2017-02-20"))
+
+    def test_transform_returns_no_estimated_release_date(self):
+        output = transform_issue_updated_data(json.dumps({}))
+
+        assert_that("estimated_release_date" in output)
+        assert_that(output.get("estimated_release_date"), equal_to(""))
+
     def test_transform_returns_full_dataset(self):
         output = transform_issue_updated_data(json.dumps(issue_updated_json))
 
@@ -110,6 +134,8 @@ class TestMapValues(unittest.TestCase):
             "title": "",
             "released_by": "",
             "assignee": "",
+            "sign_off_by": "",
+            "estimated_release_date": ""
         }
 
         output_dict = _map_values(input_dict, mapping_dict)
@@ -121,6 +147,8 @@ class TestMapValues(unittest.TestCase):
             "title": ("issue", "fields", "summary"),
             "released_by": ("user", "displayName"),
             "assignee": ("issue", "fields", "assignee", "displayName"),
+            "sign_off_by": ("issue", "fields", "customfield_11300"),
+            "estimated_release_date": ("issue", "fields", "customfield_11301")
         }
 
         output_dict = _map_values(issue_updated_json, mapping_dict)
