@@ -8,7 +8,7 @@ endef
 in_venv=venv/bin/activate
 
 .PHONY: default
-default: clean venv clean_pyc flake8 tests wheel
+default: clean clean_pyc venv clean_pyc flake8 tests wheel docker
 	$(call green,"[Build successful]")
 
 venv: venv/bin/activate
@@ -44,3 +44,9 @@ run_jira_service: venv
 wheel:
 	. $(in_venv); python setup.py bdist_wheel
 	$(call green,"[Build of Wheel Successful]")
+
+BUILD_NUMBER ?= 0
+.PHONY: docker
+docker:
+	docker build -t jira-receiver:$(BUILD_NUMBER) --build-arg BUILD_NUMBER=$(BUILD_NUMBER) .
+	$(call green,"[Build of Container Successful]")
