@@ -6,7 +6,7 @@ def transform_issue_updated_data(request_data):
     mapping_dict = {
         "story_number": ("issue", "key"),
         "title": ("issue", "fields", "summary"),
-        "released_by": ("user", "displayName"),
+        "transitioned_by": ("user", "displayName"),
         "assignee": ("issue", "fields", "assignee", "displayName"),
         "sign_off_by": ("issue", "fields", "customfield_11300"),
         "estimated_release_date": ("issue", "fields", "customfield_11301")
