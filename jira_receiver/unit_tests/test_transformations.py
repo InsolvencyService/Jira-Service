@@ -31,17 +31,17 @@ class TestTransformations(unittest.TestCase):
         assert_that("title" in output)
         assert_that(output.get("title"), equal_to(""))
 
-    def test_transform_returns_released_by(self):
+    def test_transform_returns_transitioned_by(self):
         output = transform_issue_updated_data(json.dumps(issue_updated_json))
 
-        assert_that("released_by" in output)
-        assert_that(output.get("released_by"), equal_to("Andy Price"))
+        assert_that("transitioned_by" in output)
+        assert_that(output.get("transitioned_by"), equal_to("Andy Price"))
 
-    def test_transform_returns_no_released_by(self):
+    def test_transform_returns_no_transitioned_by(self):
         output = transform_issue_updated_data(json.dumps({}))
 
-        assert_that("released_by" in output)
-        assert_that(output.get("released_by"), equal_to(""))
+        assert_that("transitioned_by" in output)
+        assert_that(output.get("transitioned_by"), equal_to(""))
 
     def test_transform_returns_assignee(self):
         output = transform_issue_updated_data(json.dumps(issue_updated_json))
@@ -132,7 +132,7 @@ class TestMapValues(unittest.TestCase):
         mapping_dict = {
             "story_number": "",
             "title": "",
-            "released_by": "",
+            "transitioned_by": "",
             "assignee": "",
             "sign_off_by": "",
             "estimated_release_date": ""
@@ -145,7 +145,7 @@ class TestMapValues(unittest.TestCase):
         mapping_dict = {
             "story_number": ("issue", "key"),
             "title": ("issue", "fields", "summary"),
-            "released_by": ("user", "displayName"),
+            "transitioned_by": ("user", "displayName"),
             "assignee": ("issue", "fields", "assignee", "displayName"),
             "sign_off_by": ("issue", "fields", "customfield_11300"),
             "estimated_release_date": ("issue", "fields", "customfield_11301")

@@ -22,7 +22,7 @@ issue_updated_json = {
 expected_output_dict = {
     "story_number": "ADS-166",
     "title": "Notify Service Management of Release",
-    "released_by": "Andy Price",
+    "transitioned_by": "Andy Price",
     "assignee": "Andy Price",
     "sign_off_by": "James Warren",
     "estimated_release_date": "2017-02-20"
@@ -31,7 +31,7 @@ expected_output_dict = {
 expected_empty_output_dict = {
     "story_number": "",
     "title": "",
-    "released_by": "",
+    "transitioned_by": "",
     "assignee": "",
     "sign_off_by": "",
     "estimated_release_date": ""
