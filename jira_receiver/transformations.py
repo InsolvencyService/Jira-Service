@@ -7,7 +7,11 @@ def transform_issue_updated_data(request_data):
         "story_number": ("issue", "key"),
         "title": ("issue", "fields", "summary"),
         "transitioned_by": ("user", "displayName"),
+        "transitioned_by_email": ("user", "emailAddress"),
         "assignee": ("issue", "fields", "assignee", "displayName"),
+        "assignee_email": ("issue", "fields", "assignee", "emailAddress"),
+        "reporter": ("issue", "fields", "reporter", "displayName"),
+        "reporter_email": ("issue", "fields", "reporter", "emailAddress"),
         "sign_off_by": ("issue", "fields", "customfield_11300"),
         "estimated_release_date": ("issue", "fields", "customfield_11301")
     }
