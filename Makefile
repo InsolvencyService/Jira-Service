@@ -5,10 +5,12 @@ define green
 	@tput sgr0
 endef
 
+BUILD_NUMBER ?= 0
+
 in_venv=venv/bin/activate
 
 .PHONY: default
-default: clean clean_pyc venv clean_pyc flake8 tests wheel docker
+default: clean clean_pyc venv clean_pyc flake8 tests wheel docker_build docker_run
 	$(call green,"[Build successful]")
 
 venv: venv/bin/activate
@@ -45,8 +47,12 @@ wheel:
 	. $(in_venv); python setup.py bdist_wheel
 	$(call green,"[Build of Wheel Successful]")
 
-BUILD_NUMBER ?= 0
-.PHONY: docker
-docker:
+.PHONY: docker_build
+docker_build:
 	docker build -t jira-receiver:$(BUILD_NUMBER) --build-arg BUILD_NUMBER=$(BUILD_NUMBER) .
+	$(call green,"[Build of Container Successful]")
+
+.PHONY: docker_run
+docker_run:
+	docker-compose up
 	$(call green,"[Build of Container Successful]")
