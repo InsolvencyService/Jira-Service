@@ -43,6 +43,18 @@ class TestTransformations(unittest.TestCase):
         assert_that("transitioned_by" in output)
         assert_that(output.get("transitioned_by"), equal_to(""))
 
+    def test_transform_returns_transitioned_by_email(self):
+        output = transform_issue_updated_data(json.dumps(issue_updated_json))
+
+        assert_that("transitioned_by_email" in output)
+        assert_that(output.get("transitioned_by_email"), equal_to("sixdaysandy@gmail.com"))
+
+    def test_transform_returns_no_transitioned_by_email(self):
+        output = transform_issue_updated_data(json.dumps({}))
+
+        assert_that("transitioned_by_email" in output)
+        assert_that(output.get("transitioned_by_email"), equal_to(""))
+
     def test_transform_returns_assignee(self):
         output = transform_issue_updated_data(json.dumps(issue_updated_json))
 
@@ -54,6 +66,18 @@ class TestTransformations(unittest.TestCase):
 
         assert_that("assignee" in output)
         assert_that(output.get("assignee"), equal_to(""))
+
+    def test_transform_returns_assignee_email(self):
+        output = transform_issue_updated_data(json.dumps(issue_updated_json))
+
+        assert_that("assignee_email" in output)
+        assert_that(output.get("assignee_email"), equal_to("sixdaysandy@gmail.com"))
+
+    def test_transform_returns_no_assignee_email(self):
+        output = transform_issue_updated_data(json.dumps({}))
+
+        assert_that("assignee_email" in output)
+        assert_that(output.get("assignee_email"), equal_to(""))
 
     def test_transform_returns_sign_off_by(self):
         output = transform_issue_updated_data(json.dumps(issue_updated_json))
@@ -79,12 +103,12 @@ class TestTransformations(unittest.TestCase):
         assert_that("estimated_release_date" in output)
         assert_that(output.get("estimated_release_date"), equal_to(""))
 
-    def test_transform_returns_full_dataset(self):
+    def test_transform_returns_full_data_set(self):
         output = transform_issue_updated_data(json.dumps(issue_updated_json))
 
         assert_that(output, equal_to(expected_output_dict))
 
-    def test_transform_returns_no_assignee(self):
+    def test_transform_returns_empty_data_set(self):
         output = transform_issue_updated_data(json.dumps({}))
 
         assert_that(output, equal_to(expected_empty_output_dict))
@@ -133,7 +157,11 @@ class TestMapValues(unittest.TestCase):
             "story_number": "",
             "title": "",
             "transitioned_by": "",
+            "transitioned_by_email": "",
             "assignee": "",
+            "assignee_email": "",
+            "reporter": "",
+            "reporter_email": "",
             "sign_off_by": "",
             "estimated_release_date": ""
         }
@@ -146,7 +174,11 @@ class TestMapValues(unittest.TestCase):
             "story_number": ("issue", "key"),
             "title": ("issue", "fields", "summary"),
             "transitioned_by": ("user", "displayName"),
+            "transitioned_by_email": ("user", "emailAddress"),
             "assignee": ("issue", "fields", "assignee", "displayName"),
+            "assignee_email": ("issue", "fields", "assignee", "emailAddress"),
+            "reporter": ("issue", "fields", "reporter", "displayName"),
+            "reporter_email": ("issue", "fields", "reporter", "emailAddress"),
             "sign_off_by": ("issue", "fields", "customfield_11300"),
             "estimated_release_date": ("issue", "fields", "customfield_11301")
         }
