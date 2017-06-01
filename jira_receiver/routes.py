@@ -12,12 +12,12 @@ def health_check():
     return "Service Running", 200
 
 
-def accept_post(tmplate, sbject):
+def accept_post(template, subject):
     logger.info("Request Received")
     if request.data:
         model = transform_issue_updated_data(request.data)
         logger.info("Calling Mail Builder")
-        email = build_email(model, tmplate, current_app.config["RECIPIENTS"], sbject)
+        email = build_email(model, template, current_app.config["RECIPIENTS"], subject)
         logger.info("Mail Built - Sending")
         mail.send(email)
         logger.info("Mail Sent")
@@ -35,3 +35,8 @@ def accept_post_sc():
 @jira_receiver.route('/awaiting-release', methods=["POST"])
 def accept_post_ar():
     return accept_post("awaiting_release", "Awaiting Release")
+
+
+@jira_receiver.route('/awaiting-svc-mgmt-sign-off', methods=["POST"])
+def accept_post_asmso():
+    return accept_post("awaiting_svc_mgmt_sign_off", "Awaiting Change Management Sign Off")

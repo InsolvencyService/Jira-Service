@@ -1,0 +1,8 @@
+version: "3"
+services:
+  jira-receiver:
+    build: ./
+    image: jira-receiver:${BUILD_NUMBER:-0}
+    env_file: ${ENV_FILE:-test}
+    ports:
+      - "5000:5000"
